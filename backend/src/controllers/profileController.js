@@ -5,7 +5,7 @@ export const getUserInfo = async (req, res) => {
     const { email } = req.params;
     const userInfo = await UserInfo.findOne({ email });
 
-    if (!userInfo) return res.status(404).json({ success: false, message: "User not found" });
+    if (!userInfo) return;
 
     // Convert profileImage buffer to base64 string
     let profileImageBase64 = null;
