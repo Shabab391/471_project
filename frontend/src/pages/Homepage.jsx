@@ -18,8 +18,7 @@ const Homepage = () => {
     <div className="max-w-md">
       <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
       <p className="mb-5">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
+        Welcome to your all purpose Hub of answers, you can click down here to find instittions according to your needs. Study Plan is there to tell all about the surroundings of that area. Give it a try
       </p>
       <Link to={"/Search"} className="btn btn-neutral mt-2">
       <Search className="size-5"/>Search</Link>
