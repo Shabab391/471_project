@@ -20,9 +20,9 @@ try {
      else {
       filter[key] = value; // direct match for country, name, etc.
     }
-    console.log(filter,"now here")
+    //console.log(filter,"now here")
     const results = await Search.find(filter);
-    console.log(results);
+    //console.log(results);
     return res.json(results);
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message });

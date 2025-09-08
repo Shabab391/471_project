@@ -17,10 +17,3 @@ export async function createNote(req, res){
     }
 }
 
-export function updateNote(req, res){
-    res.status(200).json({message: "Note updated"});
-}
-
-export function deleteNote(req, res){
-    res.status(200).json({message: "Note deleted"});
-}
