@@ -30,14 +30,3 @@ try {
   }
 }
 
-// export async function createData(req, res){
-//     try{
-//     const newSearch= new Search(req.body);
-//     await newSearch.save();
-//     res.status(201).json({message: "User created"});
-// }
-//     catch(error){
-//         console.log(error);
-//         res.status(500).json({ message: "Server error", error: error.message });
-//     }
-// }

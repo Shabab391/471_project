@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import api from "../lib/axios"
 import Navbar from "./components/navbar";
+import toast from "react-hot-toast"
 
 export default function AboutYouForm() {
   const [formData, setFormData] = useState({
@@ -78,13 +79,13 @@ export default function AboutYouForm() {
       );
 
       if (res.data.success) {
-        alert("Info updated successfully!");
+        toast.success("Info updated successfully!");
       } else {
-        alert("Error updating info.");
+        toast.error("Error updating info.");
       }
     } catch (err) {
       console.error(err);
-      alert("Error updating info.");
+      toast.error("Error updating info.");
     }
   };
 
